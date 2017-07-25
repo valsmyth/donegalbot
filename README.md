@@ -1,2 +1,2 @@
 # donegalbot
-learningt bots
+learning bots
