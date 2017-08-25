@@ -25,6 +25,7 @@ var bot = new builder.UniversalBot(connector, function (session) {
 if(session.message.text!="")
 { 
 
+
 request({
     url: ""+process.env.ENDPOINT_URL,
     method: "POST",
@@ -37,5 +38,6 @@ request({
 });
 
 
-}
-);
+}else{
+session.send("You said: %s", session.message.text);}
+});
